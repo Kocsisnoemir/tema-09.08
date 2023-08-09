@@ -1,0 +1,55 @@
+body {
+     padding: 0;
+     margin: 0;
+
+}
+h2{
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: 30;
+    color: blue;
+
+}
+form{
+     padding: 20px;
+
+}
+label[for="username"]{
+    position: relative;
+    left: 230px;
+    top:30px;
+   
+
+}
+input[type="text"]{
+    position: relative;
+    left: 228px;
+    top: 30px;
+    border-radius: 90px;
+    
+
+}
+label[for="password"]{
+    position: relative;
+    top: 60px;
+    
+
+}
+input[type="password"]{
+    position: relative;
+    top:57px;
+    left:5px;
+    border-radius: 90px;
+    
+
+}
+input[type="submit"]{
+    position: relative;
+    top: 85px;
+    right: 50px;
+    border-radius: 90px;
+    
+
+}
+

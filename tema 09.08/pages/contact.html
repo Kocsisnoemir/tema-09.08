@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+
+        body{
+            background-color: beige;
+            background-position: center center;
+
+        }
+        .invelis{
+            width: 800px;
+            margin: 5% auto;
+        }
+        .form-container{
+                display: flex;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 25px;
+                padding: 1.9em;
+        }
+        .mesaj{
+                display: flex;
+                flex-direction: column;
+                order: 2;
+        }
+        .mesaj > textarea{
+                flex: 1;
+                min-width: 18em;
+                background:wheat;
+                color: azure;
+                padding: 15px; 
+        }
+        .detalii{
+                flex:1;
+                order: 1;
+                margin-right: 2em;
+        }
+        .detalii input{
+            width: 100%;
+            background: white;
+            color: black;
+            border-radius: 50px;
+        }
+        .detalii input,
+        .detalii button{
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+        .detalii button{
+            background:tomato;
+            color: black;
+            border:0;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-family: poppins;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        label{
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="../index.html">Home</a></li>
+           <li><a href="login.html">Login</a></li>
+           <li><a href="register.html">Register</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+    <h1>Parerea dumneavoasra conteaza</h1>
+        <div class="invelis">
+            <form action="" class="form-container">
+                <div class="mesaj">
+                    <label for="mesaj">Mesajul tau</label>
+                    <textarea  id="mesaj"></textarea>  
+                </div>
+                <div class="detalii">
+                    <label for="nume">Nume</label>
+                    <input type="text" name="nume" id="nume">
+
+                    <label for="prenume">Prenume</label>
+                    <input type="text" name="prenume" id="prenume">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <button type="submit">Submit</button>
+
+                </div>
+            </form>
+        </div>
+
+   
+    
+</body>
+</html>

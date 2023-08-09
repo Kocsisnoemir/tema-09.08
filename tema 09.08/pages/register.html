@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: #eee;
+
+}
+
+.form-container form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background-color: #fff;
+    text-align: center;
+    width: 500px;
+
+}
+
+.form-container form h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+
+}
+
+.form-container form input,
+.form-container form select{
+    width: 100%;
+    padding: 10px 15 px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.form-container form select option{
+    background: #fff;
+
+}
+
+.form-container form .form-inr{
+        background: red;
+        color: black;
+        text-transform:capitalize;
+        font-size: 20px;
+        cursor: pointer;
+
+}
+
+.form-container form .form-inr:hover{
+        background:red;
+        color: red;
+
+}
+.form-container form p{
+    margin-top: 20px;
+    font-size: 60px;
+    color: #333;
+
+
+
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="../index.html">Home</a></li>
+           <li><a href="login.html">Login</a></li>
+           <li><a href="register.html">Register</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+   </nav>
+   <div class="form-container">
+    <form action="#" method="post">
+            <h2>Inregistrare</h2>
+            <select name="tip_utilizator">
+                <option value="persoana_fizica">Persoana fizica</option>
+                <option value="persoana_juridica">Persoana juridica</option>
+            </select>
+            <h3>Date cont</h3>
+            <input type="text" name="nume" required placeholder="nume">
+            <input type="text" name="prenume" required placeholder="prenume">
+            <input type="email" name="email" required placeholder="email">
+            <input type="password" name="password" required placeholder="introdu parola">
+            <input type="password" name="cpassword" required placeholder="confirma parola">
+            <input name="sex" type="radio" id="masculin">
+            <label for="masculin">masculin</label>
+            <input name="sex" type="radio" id="feminin">
+            <label for="feminin">feminin</label>  
+            <input type="submit" value="Inregistrare" class="form-inr">
+            
+            
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+   </div>
+
+    
+</body>
+</html>
